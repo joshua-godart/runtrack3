@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
@@ -11,8 +12,8 @@
     <form action="inscription.php" method="post">
         <div class="table">
             <div class="label">
-                <label for="id_pokemon">ID : </label>
-                <input type="text" name="id_pokemon" id="id_pokemon" placeholder="ID">
+                <label for="id">ID : </label>
+                <input type="text" name="id" id="id" placeholder="ID">
             </div>
             <div class="label">
                 <label for="name">Nom : </label>
@@ -21,29 +22,37 @@
             <div class="label">
                 <label for="type">Type : </label>
                 <select  name="type" id="type" placeholder="Types">
-                    <option value="grass">Grass</option>
+                    <option value="">All</option>
+                    <option value="Grass">Grass</option>
                     <option value="Poison">Poison</option>
-                    <option value="fire">Fire</option>
-                    <option value="flying">Flying</option>
-                    <option value="water">Water</option>
-                    <option value="bug">Bug</option>
-                    <option value="normal">Normal</option>
-                    <option value="electric">Electric</option>
-                    <option value="ground">Ground</option>
-                    <option value="fairy">Fairy</option>
-                    <option value="fighting">Fighting</option>
-                    <option value="psychic">Psychic</option>
-                    <option value="rock">Rock</option>
-                    <option value="steel">Steel</option>
-                    <option value="ice">Ice</option>
-                    <option value="ghost">Ghost</option>
-                    <option value="dragon">Dragon</option>
+                    <option value="Fire">Fire</option>
+                    <option value="Flying">Flying</option>
+                    <option value="Water">Water</option>
+                    <option value="Bug">Bug</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Electric">Electric</option>
+                    <option value="Ground">Ground</option>
+                    <option value="Fairy">Fairy</option>
+                    <option value="Fighting">Fighting</option>
+                    <option value="Psychic">Psychic</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Steel">Steel</option>
+                    <option value="Ice">Ice</option>
+                    <option value="Ghost">Ghost</option>
+                    <option value="Dragon">Dragon</option>
             </div>
             <div class="valider">
-                <input type="button" name="form_tri" value="Filtrer">
+                <input type="button" id ="filterBtn" name="form_tri" value="Filtrer">
             </div>
         </div>
     </form>
+    <div id="results"></div>
+    <script
+        src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+        crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
