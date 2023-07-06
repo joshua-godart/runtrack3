@@ -23,7 +23,7 @@
 <button id="restart">Recommencer</button>
 
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
