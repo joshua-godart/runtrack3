@@ -1,0 +1,10 @@
+#rainbow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  #resultMessage {
+    margin-top: 20px;
+  }
+  
